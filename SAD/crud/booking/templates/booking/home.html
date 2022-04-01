@@ -2,12 +2,13 @@
 {% block content %}
   {% for listing in listings %}
     <article class="media content-section">
+      <img class="rounded-circle article-img" src="{{ listing.owner.profile.image.url }}">
       <div class="media-body">
         <div class="article-metadata">
           <a class="mr-2" href="#">{{ listing.owner }}</a>
           <small class="text-muted">{{ listing.date_listed }}</small>
         </div>
-        <h2><a class="article-title" href="#">{{ listing.title }}</a></h2>
+        <h2><a class="article-title" href="{% url 'listing-detail' listing.id %}">{{ listing.title }}</a></h2>
         <p class="article-content">{{ listing.description }}</p>
       </div>
     </article>
