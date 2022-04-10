@@ -1,0 +1,6 @@
+*.pyc
+db.sqlite3
+*.swp
+.vscode/
+Dockerfile
+docker-compose.yml

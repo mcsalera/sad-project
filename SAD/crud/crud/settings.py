@@ -71,6 +71,26 @@ TEMPLATES = [
     },
 ]
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'WARNING',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'var/development-error.log'
+        }
+    },
+    'loggers': {
+        '': {
+            'handlers': ['file'],
+            'level': 'WARNING',
+            'propagate': True
+        }
+    }
+}
+
+
 WSGI_APPLICATION = 'crud.wsgi.application'
 
 
