@@ -9,7 +9,8 @@ from .views import (
 from . import views
 
 urlpatterns = [
-    path('', ListingListView.as_view(), name='booking-home'),
+    path('', views.homepage, name="homepage"),
+    path('search', ListingListView.as_view(), name='booking-home'),
     path('listing/<int:pk>/', ListingDetailView.as_view(), name='listing-detail'),
     path('listing/new/', ListingCreateView.as_view(), name='listing-create'),
     path('listing/<int:pk>/update/', ListingUpdateView.as_view(), name='listing-update'),

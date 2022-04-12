@@ -8,8 +8,12 @@
  
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+
+     {% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> {% endcomment %}
+
      <link rel="stylesheet" type="text/css" href="{% static 'booking/main.css' %}">
+     {% block css_files %}{% endblock %}
   {% if title %}
     <title>Booking - {{ title }}</title>
   {% else %}
@@ -18,7 +22,7 @@
 </head>
 <body>
     <header class="site-header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
           <div class="container">
             <a class="navbar-brand mr-4" href="{% url 'booking-home' %}">Booking Site</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,11 +30,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
               <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link" href="{% url 'booking-home' %}">Home</a>
-                <a class="nav-item nav-link" href="{% url 'booking-about' %}">About</a>
+                <a class="nav-item nav-link" href="{% url 'booking-home' %}">Blog</a>
+                <a class="nav-item nav-link" href="{% url 'booking-about' %}">Announcements</a>
               </div>
               <!-- Navbar Right Side -->
               <div class="navbar-nav">
+                <a class="nav-item nav-link" href="{% url 'booking-home' %}">Host Your Facility</a>
                 {% if user.is_authenticated %}
                 <a class="nav-item nav-link" href="{% url 'listing-create' %}">Create New Listing</a>
                 <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
@@ -44,8 +49,12 @@
           </div>
         </nav>
       </header>
-      <main role="main" class="container">
-        <div class="row">
+      
+      <main role="main" class="px-5">
+        
+        {% block content %}{% endblock %}
+
+        {% comment %} <div class="row">
           <div class="col-md-8">
             {% if messages %}
               {% for message in messages %}
@@ -55,8 +64,9 @@
               {% endfor %}
             {% endif %}
             {% block content %}{% endblock %}
-          </div>
-          <div class="col-md-4">
+          </div> {% endcomment %}
+
+          {% comment %} <div class="col-md-4">
             <div class="content-section">
               <h3>Sidebar</h3>
               <p class='text-muted'>Welcome to the Booking Website
@@ -68,8 +78,9 @@
                 </ul>
               </p>
             </div>
-          </div>
-        </div>
+          </div> {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+        
       </main>
 
 

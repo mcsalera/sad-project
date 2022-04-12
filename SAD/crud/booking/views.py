@@ -15,6 +15,9 @@ def home(request):
     }
     return render(request, 'booking/home.html', context)
 
+def homepage(request):
+    return render(request, 'booking/homepage.html')
+
 class ListingListView(ListView):
     model = Listing
     template_name = 'booking/home.html' #<app>/<model>_<viewtype>.html

@@ -1,0 +1,51 @@
+{% extends "booking/base.html" %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" type="text/css" href="{% static 'booking/homepage.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <div class="text-center">
+            <div class=""><p>Search. View. Book.</p></div>
+            <div> Search</div>
+        </div>
+    </div>
+    
+    <div class="facilies-sample mx-auto">
+        <div class="py-5">        
+            <h3 class="mb-5 pl-5">Explore Facilities</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="{% static "booking/images/the-anam-_twiIcIsp2s-unsplash.jpg" %}" alt="Resort"/>
+                </div>
+                <div class="col-sm">
+                    <img src="{% static "booking/images/conference-room.jpg" %}" alt="Conference Room"/>
+                </div>
+                <div class="col-sm">
+                    <img src="{% static "booking/images/basketball-court.jpg" %}" alt="Basketball Court"/>
+                </div>
+            </div>
+    
+            <div class="row mt-5">
+                <div class="col-sm">
+                    <img src="{% static "booking/images/hotel-room.jpg" %}" alt="Room"/>
+                </div>
+                <div class="col-sm">
+                    <img src="{% static "booking/images/dining-room.jpg" %}" alt="Dining Room"/>
+                </div>
+                <div class="col-sm">
+                    <img src="{% static "booking/images/football-field.jpg" %}" alt="Football Field"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5 mx-auto pt-5" id="host">
+            <div class="mx-auto text-center">
+                <h5>Host your facility?</h5>
+                <a href="#">Learn More</a>
+            <div>
+        </div>
+    </div>
+{% endblock %}
