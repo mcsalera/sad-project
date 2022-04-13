@@ -21,10 +21,19 @@ img {
     max-width: 800px;
 }
 
+#search-background {
+    background-color: #89CFF0;
+    border-radius: 50px;
+}
+
+#search-background > h1 {
+    color: #0077c0;
+}
+
+
 #host {
-    width: 800px;
-    height: 600px;
-    background-color: blueviolet;
+    width: 1000px;
+    height: 700px;
     background: url("/static/booking/images/property-key.jpg");
     border-radius: 50px;
     background-size: 100%;
@@ -32,12 +41,12 @@ img {
 
 #host > div {
     background-color: #00308F;
-    width: 18rem;
+    width: 20rem;
     border-radius: 50px;
-    padding: 10px;
+    padding: 15px;
     margin-top: 400px
 }
 
-#host > div >h5 {
+#host > div >h3 {
     color: white;
 }
