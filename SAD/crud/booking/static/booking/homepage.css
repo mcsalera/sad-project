@@ -17,6 +17,10 @@ img {
     max-width: 1700px;
 }
 
+#search {
+    max-width: 800px;
+}
+
 #host {
     width: 800px;
     height: 600px;

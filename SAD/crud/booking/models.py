@@ -9,6 +9,7 @@ class Listing(models.Model):
     description = models.TextField()
     date_listed = models.DateTimeField(default=timezone.now)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    price = models.IntegerField()
 
     def __str__(self):
         return self.title

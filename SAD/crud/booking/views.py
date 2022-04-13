@@ -3,11 +3,14 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.http import HttpResponse
 from .models import Listing
 from django.views.generic import (
-    ListView, 
-    DetailView, 
+    ListView,
+    DetailView,
     CreateView,
     UpdateView,
     DeleteView)
+
+from .forms import SearchForm
+
 
 def home(request):
     context = {
@@ -15,17 +18,25 @@ def home(request):
     }
     return render(request, 'booking/home.html', context)
 
+
 def homepage(request):
-    return render(request, 'booking/homepage.html')
+    form = SearchForm()
+    if request.method == 'GET':
+        print("This is awesome")
+    
+    return render(request, 'booking/homepage.html', {'form': form})
+
 
 class ListingListView(ListView):
     model = Listing
-    template_name = 'booking/home.html' #<app>/<model>_<viewtype>.html
+    template_name = 'booking/home.html'  # <app>/<model>_<viewtype>.html
     context_object_name = 'listings'
     ordering = ['-date_listed']
 
+
 class ListingDetailView(DetailView):
     model = Listing
+
 
 class ListingCreateView(LoginRequiredMixin, CreateView):
     model = Listing
@@ -34,6 +45,7 @@ class ListingCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.owner = self.request.user
         return super().form_valid(form)
+
 
 class ListingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Listing
@@ -49,6 +61,7 @@ class ListingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
             return True
         return False
 
+
 class ListingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Listing
     success_url = '/'
@@ -58,6 +71,7 @@ class ListingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         if self.request.user == listing.owner:
             return True
         return False
+
 
 def about(request):
     return render(request, 'booking/about.html', {'title': 'About'})
