@@ -13,6 +13,7 @@ from .forms import SearchForm
 
 
 def home(request):
+    print(request.get)
     context = {
         'listings': Listing.objects.all()
     }
@@ -21,8 +22,6 @@ def home(request):
 
 def homepage(request):
     form = SearchForm()
-    if request.method == 'GET':
-        print("This is awesome")
     
     return render(request, 'booking/homepage.html', {'form': form})
 
@@ -40,7 +39,7 @@ class ListingDetailView(DetailView):
 
 class ListingCreateView(LoginRequiredMixin, CreateView):
     model = Listing
-    fields = ['title', 'description']
+    fields = ['title', 'description', 'country', 'city','price']
 
     def form_valid(self, form):
         form.instance.owner = self.request.user

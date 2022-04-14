@@ -9,16 +9,22 @@
     <div class="p-5" id="search-background">
         <h1 class="text-center">Search. View. Book.</h1>
         <div class="mt-5 p-1 bg-info mx-auto" id="search">
-            <form action="/" method="post">
+            <form action="/search" method="get">
                 <div class="form-row align-items-center">
-                    <div class="col-5">
-                        {{ form.location }}
+                    <div class="col-3">
+                        {{ form.country }}
                     </div>
-                    <div class="col-5">
+                    <div class="col-3">
+                        {{ form.city }}
+                    </div>
+                    <div class="col-3">
                         {{ form.max_price }}
                     </div>
-                    <div class="col-2">
-                        <button type="submit" class="btn btn-secondary btn-block">Submit</button>
+                    <div class="col">
+                        <button type="submit" class="btn btn-secondary btn-block">Search</button>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-primary btn-block" href="{% url 'search' %}">Search All</a>
                     </div>
                 </div>
             </form>

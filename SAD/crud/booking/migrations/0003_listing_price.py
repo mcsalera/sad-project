@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='listing',
             name='price',
-            field=models.IntegerField(default=103),
+            field=models.IntegerField(),
             preserve_default=False,
         ),
     ]

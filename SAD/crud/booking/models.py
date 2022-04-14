@@ -10,6 +10,8 @@ class Listing(models.Model):
     date_listed = models.DateTimeField(default=timezone.now)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     price = models.IntegerField()
+    country = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
 
     def __str__(self):
         return self.title
