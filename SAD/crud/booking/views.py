@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from .models import Listing
 from django.views.generic import (
-    ListView,
+    # ListView,
     DetailView,
     CreateView,
     UpdateView,
@@ -12,11 +12,19 @@ from django.views.generic import (
 from .forms import SearchForm
 
 
-def home(request):
-    print(request.get)
+def searchpage(request):
     context = {
         'listings': Listing.objects.all()
     }
+    if 'country' and 'city' in request.GET:
+        if request.GET.get('city') is not '':
+            context = {
+                'listings': Listing.objects.filter(country=request.GET.get('country')).filter(city=request.GET.get('city')).filter(price__gte=request.GET.get('price'))
+            }
+        else:
+            context = {
+                'listings': Listing.objects.filter(country=request.GET.get('country')).filter(price__gte=request.GET.get('price'))
+            }
     return render(request, 'booking/home.html', context)
 
 
@@ -26,11 +34,11 @@ def homepage(request):
     return render(request, 'booking/homepage.html', {'form': form})
 
 
-class ListingListView(ListView):
-    model = Listing
-    template_name = 'booking/home.html'  # <app>/<model>_<viewtype>.html
-    context_object_name = 'listings'
-    ordering = ['-date_listed']
+# class ListingListView(ListView):
+#     model = Listing
+#     template_name = 'booking/home.html'  # <app>/<model>_<viewtype>.html
+#     context_object_name = 'listings'
+#     ordering = ['-date_listed']
 
 
 class ListingDetailView(DetailView):

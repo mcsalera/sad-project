@@ -594,3 +594,373 @@ Traceback (most recent call last):
   File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 802, in _reverse_with_prefix
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'booking-home' not found. 'booking-home' is not a valid view function or pattern name.
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 67, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 99, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 70, in get_success_url
+    return self.get_redirect_url() or self.get_default_redirect_url()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 86, in get_default_redirect_url
+    return resolve_url(self.next_page or settings.LOGIN_REDIRECT_URL)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'booking-home' not found. 'booking-home' is not a valid view function or pattern name.
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 67, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 99, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 70, in get_success_url
+    return self.get_redirect_url() or self.get_default_redirect_url()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 86, in get_default_redirect_url
+    return resolve_url(self.next_page or settings.LOGIN_REDIRECT_URL)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'booking-home' not found. 'booking-home' is not a valid view function or pattern name.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 16, in searchpage
+    print(request.get)
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 16, in searchpage
+    print(request.get)
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 25, in searchpage
+    return render(request, 'booking/home.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 193, in render
+    values = list(values)
+TypeError: 'Listing' object is not iterable
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 21, in searchpage
+    'listings': Listing.objects.filter(country=request.GET.get('country').filter(price__level__lte=request.GET.get('max_price')))
+AttributeError: 'str' object has no attribute 'filter'
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 21, in searchpage
+    'listings': Listing.objects.filter(country=request.GET.get('country').filter(price__lte=request.GET.get('max_price')))
+AttributeError: 'str' object has no attribute 'filter'
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 21, in searchpage
+    'listings': Listing.objects.filter(country=request.GET.get('country').filter(price__lte=request.GET.get('max_price')))
+AttributeError: 'str' object has no attribute 'filter'
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 21, in searchpage
+    'listings': Listing.objects.filter(country=request.GET.get('country').filter(price__lte=request.GET.get('max_price')))
+AttributeError: 'str' object has no attribute 'filter'
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 21, in searchpage
+    'listings': Listing.objects.filter(country=request.GET.get('country')).filter(price_lte=request.GET.get('max_price'))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1342, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1156, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1640, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'price_lte' into field. Choices are: city, country, date_listed, description, id, owner, owner_id, price, title
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 115, in debug_sql
+    yield
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+OverflowError: Python int too large to convert to SQLite INTEGER
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 25, in searchpage
+    return render(request, 'booking/home.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 120, in debug_sql
+    sql = self.db.ops.last_executed_query(self.cursor, sql, params)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/sqlite3/operations.py", line 177, in last_executed_query
+    params = self._quote_params_for_last_executed_query(params)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/backends/sqlite3/operations.py", line 164, in _quote_params_for_last_executed_query
+    return cursor.execute(sql, params).fetchone()
+OverflowError: Python int too large to convert to SQLite INTEGER
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 21, in searchpage
+    'listings': Listing.objects.filter(country=request.GET.get('country')).filter(city=request.GET.get('city'),alias__isnull=False).filter(price__gte=request.GET.get('price'))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1342, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1156, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1640, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'alias' into field. Choices are: city, country, date_listed, description, id, owner, owner_id, price, title
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 25, in searchpage
+    return render(request, 'booking/home.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1348, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 598, in as_sql
+    self.compile(self.where) if self.where is not None else ("", [])
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 496, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/where.py", line 90, in as_sql
+    sql, params = compiler.compile(child)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 496, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/lookups.py", line 576, in as_sql
+    raise ValueError(
+ValueError: The QuerySet value for an isnull lookup must be True or False.
