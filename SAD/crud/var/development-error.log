@@ -964,3 +964,1194 @@ Traceback (most recent call last):
   File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/lookups.py", line 576, in as_sql
     raise ValueError(
 ValueError: The QuerySet value for an isnull lookup must be True or False.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'facility_image' attribute has no file associated with it.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'facility_image' attribute has no file associated with it.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 315, in render
+    match = condition.eval(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 878, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'facility_image' attribute has no file associated with it.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 315, in render
+    match = condition.eval(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 878, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'facility_image' attribute has no file associated with it.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 23: 'endif', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 315, in render
+    match = condition.eval(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 878, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'facility_image' attribute has no file associated with it.
+Not Found: /favicon.ico
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 315, in render
+    match = condition.eval(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 878, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'facility_image' attribute has no file associated with it.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 315, in render
+    match = condition.eval(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 878, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'facility_image' attribute has no file associated with it.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 315, in render
+    match = condition.eval(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 878, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'facility_image' attribute has no file associated with it.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'facility_image' attribute has no file associated with it.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 26
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 26
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 26
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 26
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 26
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 26
+Not Found: /listing.facility_image.url
+Not Found: /listing.facility_image.url
+Not Found: /listing.facility_image.url
+Not Found: /listing.facility_image.url
+Not Found: /listing.facility_image.url
+Not Found: /listing.facility_image.url
+Not Found: /listing.facility_image.url
+Not Found: /listing.owner.profile.image.url
+Not Found: /listing.owner.profile.image.url
+Not Found: /listing.owner.profile.image.url
+Not Found: /listing.owner.profile.image.url
+Not Found: /listing.owner.profile.image.url
+Not Found: /listing.owner.profile.image.url
+Not Found: /listing.owner.profile.image.url
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 18: 'endfor', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+Not Found: /listing.owner.profile.image.url
+Not Found: /listing.owner.profile.image.url
+Not Found: /listing.owner.profile.image.url
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/smartif.py", line 194, in parse
+    retval = self.expression()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/smartif.py", line 205, in expression
+    left = t.nud(self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/smartif.py", line 148, in nud
+    raise parser.error_class("Unexpected end of expression in if tag.")
+django.template.exceptions.TemplateSyntaxError: Unexpected end of expression in if tag.
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/smartif.py", line 194, in parse
+    retval = self.expression()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/smartif.py", line 205, in expression
+    left = t.nud(self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/smartif.py", line 148, in nud
+    raise parser.error_class("Unexpected end of expression in if tag.")
+django.template.exceptions.TemplateSyntaxError: Unexpected end of expression in if tag.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /search
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/new version/sad-project/SAD/crud/booking/views.py", line 28, in searchpage
+    return render(request, 'booking/search.html', context)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/abhinav/Desktop/Software Architecture Design/Project/.venv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Not Found: /favicon.ico

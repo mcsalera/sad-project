@@ -25,7 +25,7 @@ def searchpage(request):
             context = {
                 'listings': Listing.objects.filter(country=request.GET.get('country')).filter(price__gte=request.GET.get('price'))
             }
-    return render(request, 'booking/home.html', context)
+    return render(request, 'booking/search.html', context)
 
 
 def homepage(request):
@@ -36,7 +36,7 @@ def homepage(request):
 
 # class ListingListView(ListView):
 #     model = Listing
-#     template_name = 'booking/home.html'  # <app>/<model>_<viewtype>.html
+#     template_name = 'booking/search.html'  # <app>/<model>_<viewtype>.html
 #     context_object_name = 'listings'
 #     ordering = ['-date_listed']
 
@@ -47,7 +47,7 @@ class ListingDetailView(DetailView):
 
 class ListingCreateView(LoginRequiredMixin, CreateView):
     model = Listing
-    fields = ['title', 'description', 'country', 'city','price']
+    fields = ['title', 'description', 'country', 'city','price', 'facility_image']
 
     def form_valid(self, form):
         form.instance.owner = self.request.user

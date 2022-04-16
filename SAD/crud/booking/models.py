@@ -12,6 +12,7 @@ class Listing(models.Model):
     price = models.IntegerField()
     country = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
+    facility_image = models.ImageField(null=True, blank=True, upload_to="images/")
 
     def __str__(self):
         return self.title
