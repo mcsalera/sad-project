@@ -8,7 +8,7 @@
  
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+
      <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
      {% block css_files %}{% endblock %}
   {% if title %}
@@ -19,16 +19,16 @@
 </head>
 <body>
     <header class="site-header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-          <div class="container">
-            <a class="navbar-brand mr-4" href="{% url 'booking-home' %}">Booking Site</a>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+          <div class="container-fluid px-5">
+            <a class="navbar-brand mr-4" href="{% url 'homepage' %}">Booking Facility</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
               <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link" href="{% url 'booking-home' %}">Home</a>
-                <a class="nav-item nav-link" href="{% url 'booking-about' %}">About</a>
+                <a class="nav-item nav-link" href="{% url 'search' %}">Blog</a>
+                <a class="nav-item nav-link" href="{% url 'booking-about' %}">Announcements</a>
               </div>
               <!-- Navbar Right Side -->
               <div class="navbar-nav">
@@ -45,8 +45,12 @@
           </div>
         </nav>
       </header>
-      <main role="main" class="container">
-        <div class="row">
+      
+      <main role="main" class="px-5">
+        
+        {% block content %}{% endblock %}
+
+        {% comment %} <div class="row">
           <div class="col-md-8">
             {% if messages %}
               {% for message in messages %}
@@ -56,8 +60,9 @@
               {% endfor %}
             {% endif %}
             {% block content %}{% endblock %}
-          </div>
-          <div class="col-md-4">
+          </div> {% endcomment %}
+
+          {% comment %} <div class="col-md-4">
             <div class="content-section">
               <h3>Sidebar</h3>
               <p class='text-muted'>Welcome to the Booking Website
@@ -69,8 +74,9 @@
                 </ul>
               </p>
             </div>
-          </div>
-        </div>
+          </div> {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+        
       </main>
 
 
@@ -81,3 +87,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
+

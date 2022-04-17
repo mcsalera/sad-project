@@ -151,7 +151,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static"
+    # BASE_DIR / "static"
+    os.path.join(BASE_DIR, 'static')
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -164,7 +165,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = 'booking-home'
+LOGIN_REDIRECT_URL = 'homepage'
 LOGIN_URL = 'login'
-
 CSRF_TRUSTED_ORIGINS = ["http://localhost", "http://www.myproject"]

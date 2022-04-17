@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" type="text/css" href="{% static 'booking/homepage.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="p-5" id="search-background">
+        <h1 class="text-center">Search. View. Book.</h1>
+        <div class="mt-5 p-1 bg-info mx-auto" id="search">
+            <form action="/search" method="get">
+                <div class="form-row align-items-center">
+                    <div class="col-3">
+                        {{ form.country }}
+                    </div>
+                    <div class="col-3">
+                        {{ form.city }}
+                    </div>
+                    <div class="col-3">
+                        {{ form.price }}
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-secondary btn-block">Search</button>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-primary btn-block" href="{% url 'search' %}">Search All</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="facilies-sample mx-auto">
+        <div class="py-5">        
+            <h3 class="mb-5 pl-5">Explore Facilities</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="{% static "booking/images/the-anam-_twiIcIsp2s-unsplash.jpg" %}" alt="Resort"/>
+                </div>
+                <div class="col-sm">
+                    <img src="{% static "booking/images/conference-room.jpg" %}" alt="Conference Room"/>
+                </div>
+                <div class="col-sm">
+                    <img src="{% static "booking/images/basketball-court.jpg" %}" alt="Basketball Court"/>
+                </div>
+            </div>
+    
+            <div class="row mt-5">
+                <div class="col-sm">
+                    <img src="{% static "booking/images/hotel-room.jpg" %}" alt="Room"/>
+                </div>
+                <div class="col-sm">
+                    <img src="{% static "booking/images/dining-room.jpg" %}" alt="Dining Room"/>
+                </div>
+                <div class="col-sm">
+                    <img src="{% static "booking/images/football-field.jpg" %}" alt="Football Field"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5 mx-auto pt-5" id="host">
+            <div class="mx-auto text-center">
+                <h3>Host your facility?</h3>
+                <a href="#">Learn More</a>
+            <div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+  <link rel="stylesheet" type="text/css" href="{% static 'booking/search.css' %}">
+{% endblock %}
+
+{% block content %}
+  {% comment %} {% for listing in listings %}
+    <article class="media content-section">
+      <img class="rounded-circle article-img" src="{{ listing.owner.profile.image.url }}">
+      {% if listing.facility_image %}
+        <img class="rounded-circle article-img" src="{{ listing.facility_image.url }}">
+      {% endif %}
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ listing.owner }}</a>
+          <small class="text-muted">{{ listing.date_listed }}</small>
+        </div>
+        <h2><a class="article-title" href="{% url 'listing-detail' listing.id %}">{{ listing.title }}</a></h2>
+        <p class="article-content">{{ listing.description }}</p>
+      </div>
+    </article>
+  {% endfor %} {% endcomment %}
+
+  {% for listing in listings %}
+    <div class="card" style="width: 18rem;">
+      {% if listing.facility_image %}
+        <img class="card-img-top" src="{{ listing.facility_image.url }}">
+      {% else %}
+        <p>Image not provided</p>
+      {% endif %}
+      <div class="card-body">
+        <h5 class="card-title">{{ listing.title }}</h5>
+        <p class="card-text">{{ listing.country }}, {{ listing.city }}</p>
+        <p class="card-text">{{ listing.price }}</p>
+        <a href="{% url 'listing-detail' listing.id %}" class="btn btn-primary">View more</a>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock content %}
