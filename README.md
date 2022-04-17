@@ -1,7 +1,7 @@
 # sad-project
 # Members
 - **Devyani Dubey** -
-- **Anuj Gupta** - Django back-end development 80%, initial front-end design 100%, load balancing 100%
+- **Anuj Gupta** - Django back-end development 80%, initial basic front-end design 100%, load balancing 100%
 - **Abhinav Lugun** -
 - **Marie Curie Salera** -
 
