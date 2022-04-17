@@ -1,20 +1,62 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" type="text/css" href="{% static 'booking/listing_detail.css' %}">
+{% endblock %}
+
 {% block content %}
-<article class="media content-section">
-    <img class="rounded-circle article-img" src="{{ object.owner.profile.image.url }}">
-    <div class="media-body">
-    <div class="article-metadata">
-        <a class="mr-2" href="#">{{ object.owner }}</a>
-        <small class="text-muted">{{ object.date_listed }}</small>
-        <div>
-            {% if object.owner == user %}
-                <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'listing-update' object.id %}">Update Listing</a>
-                <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'listing-delete' object.id %}">Delete Listing</a>
-            {% endif %}
+
+<div class="container">
+    {% comment %} <article class="media content-section">
+        
+        <img class="rounded-circle article-img" src="{{ object.owner.profile.image.url }}">
+        <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-2" href="#">{{ object.owner }}</a>
+            <small class="text-muted">{{ object.date_listed }}</small>
+            <div>
+                {% if object.owner == user %}
+                    <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'listing-update' object.id %}">Update Listing</a>
+                    <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'listing-delete' object.id %}">Delete Listing</a>
+                {% endif %}
+            </div>
         </div>
-    </div>
-    <h2 class="article-title">{{ object.title }}</h2>
-    <p class="article-content">{{ object.description }}</p>
-    </div>
-</article>
+        <h2 class="article-title">{{ object.title }}</h2>
+        <p class="article-content">{{ object.description }}</p>
+        </div>
+    </article> {% endcomment %}
+
+    <div class="content-section">
+        <h2 class="article-title">{{ object.title }}</h2>
+        <div style="d-flex flex-row">
+            <img class="rounded-circle article-img" src="{{ object.owner.profile.image.url }}">
+            <p class="mr-5"><b>Hosted by:</b> {{ object.owner }}</p>
+            <p class="mr-5"><b>Place:</b> {{ object.city }}, {{ object.country }}</p>
+            <p><b>Date Listed:</b> {{ object.date_listed }}</p>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <img class="mx-auto img-thumbnail" id="facility-image" src="{{ object.facility_image.url }}">
+                <h4 class="mt-5">Description</h4>
+                <p class="article-content">{{ object.description }}</p>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                      <b>Price:</b> {{ object.price }} ฿ / hour
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem Ipsum</h5>
+                      <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                      <a href="#" class="btn btn-info mt-3">Book!!!!</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    <div>
+
+</div>
+
 {% endblock content %}
