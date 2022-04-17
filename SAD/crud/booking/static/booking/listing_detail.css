@@ -4,9 +4,9 @@
     display:block;
 }
 
-/* h2 {
-    text-align: center;
-} */
+.card {
+    box-shadow: 3px 3px 7px gray;
+}
 
 p {
     display: inline;

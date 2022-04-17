@@ -52,6 +52,12 @@
                       <a href="#" class="btn btn-info mt-3">Book!!!!</a>
                     </div>
                   </div>
+                  <div class="mt-3">
+                    {% if object.owner == user %}
+                        <a class="btn btn-secondary mt-1 mb-1" href="{% url 'listing-update' object.id %}">Update Listing</a>
+                        <a class="btn btn-danger mt-1 mb-1" href="{% url 'listing-delete' object.id %}">Delete Listing</a>
+                    {% endif %}
+                </div>
             </div>
         </div>
         
