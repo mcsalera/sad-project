@@ -160,3 +160,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'booking-home'
 LOGIN_URL = 'login'
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost", "http://www.myproject"]

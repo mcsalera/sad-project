@@ -348,3 +348,29 @@
 2022/04/17 13:17:36 [notice] 22480#9080: worker process 420 exited with code 0
 2022/04/17 13:17:36 [notice] 22480#9080: exit
 2022/04/17 13:17:36 [notice] 22480#9080: exit
+2022/04/17 13:34:05 [notice] 12856#22560: using the "select" event method
+2022/04/17 13:34:05 [notice] 12856#22560: using the "select" event method
+2022/04/17 13:34:05 [notice] 12856#22560: nginx/1.21.6
+2022/04/17 13:34:05 [notice] 12856#22560: nginx/1.21.6
+2022/04/17 13:34:05 [info] 12856#22560: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/17 13:34:05 [notice] 12856#22560: start worker processes
+2022/04/17 13:34:05 [notice] 12856#22560: start worker processes
+2022/04/17 13:34:05 [notice] 12856#22560: start worker process 9884
+2022/04/17 13:34:05 [notice] 12856#22560: start worker process 9884
+2022/04/17 13:34:05 [notice] 9884#14288: nginx/1.21.6
+2022/04/17 13:34:05 [notice] 9884#14288: nginx/1.21.6
+2022/04/17 13:34:05 [info] 9884#14288: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 22072
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 22072
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 1884
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 1884
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 2832
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 2832
+2022/04/17 13:34:29 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:34:29 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:34:38 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:34:38 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:37:18 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:37:18 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:38:05 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:38:05 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
