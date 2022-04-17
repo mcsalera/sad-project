@@ -1,0 +1,379 @@
+2022/03/22 15:11:18 [error] 78736#72708: *1 CreateFile() "C:\Users\anujg\nginx-1.21.6/html/html/index.html" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /html/index.html HTTP/1.1", host: "localhost"
+2022/03/22 15:11:35 [error] 78736#72708: *1 CreateFile() "C:\Users\anujg\nginx-1.21.6/html/html" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /html HTTP/1.1", host: "localhost"
+2022/03/22 15:11:39 [error] 78736#72708: *1 CreateFile() "C:\Users\anujg\nginx-1.21.6/html/html/index" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /html/index HTTP/1.1", host: "localhost"
+2022/03/22 15:11:42 [error] 78736#72708: *1 CreateFile() "C:\Users\anujg\nginx-1.21.6/html/html/50x" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /html/50x HTTP/1.1", host: "localhost"
+2022/03/22 16:12:41 [notice] 76888#50668: signal process started
+2022/03/22 16:12:41 [error] 76888#50668: OpenEvent("Global\ngx_quit_75216") failed (2: The system cannot find the file specified)
+2022/04/16 14:34:35 [notice] 1904#23416: signal process started
+2022/04/16 14:34:38 [notice] 1724#2672: signal process started
+2022/04/16 14:34:38 [error] 1724#2672: CreateFile() "C:\Users\anujg\nginx-1.21.6/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2022/04/16 14:34:42 [notice] 13300#4148: signal process started
+2022/04/16 14:34:47 [notice] 12316#8888: signal process started
+2022/04/16 14:36:49 [notice] 20068#27992: signal process started
+2022/04/16 14:36:49 [notice] 9132#25068: using the "select" event method
+2022/04/16 14:36:49 [notice] 9132#25068: using the "select" event method
+2022/04/16 14:36:49 [notice] 9132#25068: start worker processes
+2022/04/16 14:36:49 [notice] 9132#25068: start worker processes
+2022/04/16 14:36:49 [notice] 9132#25068: start worker process 28540
+2022/04/16 14:36:49 [notice] 9132#25068: start worker process 28540
+2022/04/16 14:36:49 [notice] 28540#23560: nginx/1.21.6
+2022/04/16 14:36:49 [notice] 28540#23560: nginx/1.21.6
+2022/04/16 14:36:49 [info] 28540#23560: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/16 14:36:49 [notice] 28540#23560: create thread 17040
+2022/04/16 14:36:49 [notice] 28540#23560: create thread 17040
+2022/04/16 14:36:49 [notice] 28540#23560: create thread 12548
+2022/04/16 14:36:49 [notice] 28540#23560: create thread 12548
+2022/04/16 14:36:49 [notice] 28540#23560: create thread 24824
+2022/04/16 14:36:49 [notice] 28540#23560: create thread 24824
+2022/04/16 14:36:50 [notice] 9132#25068: worker process 18324 exited with code 0
+2022/04/16 14:36:50 [notice] 9132#25068: worker process 18324 exited with code 0
+2022/04/16 14:40:06 [emerg] 28056#27672: no "events" section in configuration
+2022/04/16 14:40:21 [error] 14800#12364: *1 CreateFile() "C:\Users\anujg\nginx-1.21.6/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2022/04/16 14:42:29 [emerg] 25964#7092: no "events" section in configuration
+2022/04/16 14:43:32 [emerg] 4264#19004: no "events" section in configuration
+2022/04/16 14:44:23 [emerg] 9880#25464: no "events" section in configuration
+2022/04/16 14:45:26 [emerg] 12396#7700: no "events" section in configuration
+2022/04/16 14:55:20 [info] 28540#17040: *2 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8000
+2022/04/16 14:57:10 [notice] 27544#492: signal process started
+2022/04/16 14:57:10 [notice] 9132#25068: reconfiguring
+2022/04/16 14:57:10 [notice] 9132#25068: reconfiguring
+2022/04/16 14:57:10 [notice] 9132#25068: using the "select" event method
+2022/04/16 14:57:10 [notice] 9132#25068: using the "select" event method
+2022/04/16 14:57:10 [notice] 9132#25068: start worker processes
+2022/04/16 14:57:10 [notice] 9132#25068: start worker processes
+2022/04/16 14:57:10 [notice] 9132#25068: start worker process 20468
+2022/04/16 14:57:10 [notice] 9132#25068: start worker process 20468
+2022/04/16 14:57:10 [notice] 20468#25048: nginx/1.21.6
+2022/04/16 14:57:10 [notice] 20468#25048: nginx/1.21.6
+2022/04/16 14:57:10 [info] 20468#25048: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/16 14:57:10 [notice] 20468#25048: create thread 11260
+2022/04/16 14:57:10 [notice] 20468#25048: create thread 11260
+2022/04/16 14:57:10 [notice] 28540#23560: gracefully shutting down
+2022/04/16 14:57:10 [notice] 28540#23560: gracefully shutting down
+2022/04/16 14:57:10 [notice] 20468#25048: create thread 23528
+2022/04/16 14:57:10 [notice] 20468#25048: create thread 23528
+2022/04/16 14:57:10 [notice] 20468#25048: create thread 5584
+2022/04/16 14:57:10 [notice] 28540#12548: exiting
+2022/04/16 14:57:10 [notice] 20468#25048: create thread 5584
+2022/04/16 14:57:10 [notice] 28540#12548: exiting
+2022/04/16 14:57:11 [notice] 28540#17040: exiting
+2022/04/16 14:57:11 [notice] 28540#17040: exiting
+2022/04/16 14:57:11 [notice] 28540#23560: exit
+2022/04/16 14:57:11 [notice] 28540#23560: exit
+2022/04/16 14:57:11 [notice] 9132#25068: worker process 28540 exited with code 0
+2022/04/16 14:57:11 [notice] 9132#25068: worker process 28540 exited with code 0
+2022/04/16 14:58:07 [notice] 27788#21660: signal process started
+2022/04/16 14:58:07 [notice] 9132#25068: reconfiguring
+2022/04/16 14:58:07 [notice] 9132#25068: reconfiguring
+2022/04/16 14:58:07 [notice] 9132#25068: using the "select" event method
+2022/04/16 14:58:07 [notice] 9132#25068: using the "select" event method
+2022/04/16 14:58:07 [notice] 9132#25068: start worker processes
+2022/04/16 14:58:07 [notice] 9132#25068: start worker processes
+2022/04/16 14:58:07 [notice] 9132#25068: start worker process 27800
+2022/04/16 14:58:07 [notice] 9132#25068: start worker process 27800
+2022/04/16 14:58:07 [notice] 27800#18840: nginx/1.21.6
+2022/04/16 14:58:07 [notice] 27800#18840: nginx/1.21.6
+2022/04/16 14:58:07 [info] 27800#18840: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/16 14:58:07 [notice] 27800#18840: create thread 25556
+2022/04/16 14:58:07 [notice] 27800#18840: create thread 25556
+2022/04/16 14:58:07 [notice] 20468#25048: gracefully shutting down
+2022/04/16 14:58:07 [notice] 20468#25048: gracefully shutting down
+2022/04/16 14:58:07 [notice] 27800#18840: create thread 7784
+2022/04/16 14:58:07 [notice] 27800#18840: create thread 7784
+2022/04/16 14:58:07 [notice] 27800#18840: create thread 24604
+2022/04/16 14:58:07 [notice] 27800#18840: create thread 24604
+2022/04/16 14:58:07 [notice] 20468#23528: exiting
+2022/04/16 14:58:07 [notice] 20468#23528: exiting
+2022/04/16 14:58:07 [notice] 20468#11260: exiting
+2022/04/16 14:58:07 [notice] 20468#11260: exiting
+2022/04/16 14:58:07 [notice] 20468#25048: exit
+2022/04/16 14:58:07 [notice] 20468#25048: exit
+2022/04/16 14:58:07 [notice] 9132#25068: worker process 20468 exited with code 0
+2022/04/16 14:58:07 [notice] 9132#25068: worker process 20468 exited with code 0
+2022/04/16 15:05:41 [emerg] 5992#24288: no "events" section in configuration
+2022/04/16 15:09:38 [emerg] 21852#1416: invalid URL prefix in C:\Users\anujg\nginx-1.21.6/conf/nginx.conf:11
+2022/04/16 15:09:51 [emerg] 21888#9768: invalid URL prefix in C:\Users\anujg\nginx-1.21.6/conf/nginx.conf:11
+2022/04/16 15:10:06 [emerg] 27104#21860: no "events" section in configuration
+2022/04/16 15:11:24 [error] 14800#12364: *11 CreateFile() "C:\Users\anujg\nginx-1.21.6/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2022/04/16 15:12:25 [emerg] 13040#13556: no "events" section in configuration
+2022/04/16 15:13:18 [emerg] 24896#7780: no "events" section in configuration
+2022/04/16 15:14:23 [emerg] 24364#27628: unknown log format "main" in C:\Users\anujg\nginx-1.21.6/conf/nginx.conf:11
+2022/04/16 15:15:29 [notice] 24016#8064: signal process started
+2022/04/16 15:15:29 [error] 24016#8064: OpenEvent("Global\ngx_reload_9132") failed (2: The system cannot find the file specified)
+2022/04/16 15:16:46 [notice] 27808#17164: signal process started
+2022/04/16 15:16:46 [error] 27808#17164: OpenEvent("Global\ngx_reload_9132") failed (2: The system cannot find the file specified)
+2022/04/16 15:17:08 [notice] 23532#1956: signal process started
+2022/04/16 15:17:15 [alert] 27560#21036: 5 worker_connections are not enough
+2022/04/16 15:17:15 [error] 27560#21036: *3 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host) while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.0", upstream: "http://127.0.0.1:80/", host: "127.0.0.1"
+2022/04/16 15:19:38 [notice] 28588#10996: signal process started
+2022/04/16 15:21:35 [emerg] 15864#27832: unknown log format "main" in C:\Users\anujg\nginx-1.21.6/conf/nginx.conf:15
+2022/04/16 15:22:52 [emerg] 4536#3636: "log_format" directive is not allowed here in C:\Users\anujg\nginx-1.21.6/conf/nginx.conf:12
+2022/04/16 15:28:18 [emerg] 10760#20380: "log_format" directive is not allowed here in C:\Users\anujg\nginx-1.21.6/conf/nginx.conf:20
+2022/04/16 15:29:49 [emerg] 27972#4808: "log_format" directive is not allowed here in C:\Users\anujg\nginx-1.21.6/conf/nginx.conf:20
+2022/04/16 15:32:25 [emerg] 884#24672: "access_log" directive is not allowed here in C:\Users\anujg\nginx-1.21.6/conf/nginx.conf:16
+2022/04/16 15:32:38 [emerg] 7920#15412: unknown log format "main" in C:\Users\anujg\nginx-1.21.6/conf/nginx.conf:23
+2022/04/16 15:32:44 [notice] 26464#15688: signal process started
+2022/04/16 15:32:44 [notice] 10720#17228: using the "select" event method
+2022/04/16 15:32:44 [notice] 10720#17228: using the "select" event method
+2022/04/16 15:32:44 [notice] 10720#17228: start worker processes
+2022/04/16 15:32:44 [notice] 10720#17228: start worker processes
+2022/04/16 15:32:44 [notice] 10720#17228: start worker process 22356
+2022/04/16 15:32:44 [notice] 10720#17228: start worker process 22356
+2022/04/16 15:32:44 [notice] 22356#2576: nginx/1.21.6
+2022/04/16 15:32:44 [notice] 22356#2576: nginx/1.21.6
+2022/04/16 15:32:44 [info] 22356#2576: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/16 15:32:44 [notice] 22356#2576: create thread 23440
+2022/04/16 15:32:44 [notice] 22356#2576: create thread 23440
+2022/04/16 15:32:44 [notice] 22356#2576: create thread 13100
+2022/04/16 15:32:44 [notice] 22356#2576: create thread 13100
+2022/04/16 15:32:44 [notice] 22356#2576: create thread 22444
+2022/04/16 15:32:44 [notice] 22356#2576: create thread 22444
+2022/04/16 15:32:45 [notice] 10720#17228: worker process 25392 exited with code 0
+2022/04/16 15:32:45 [notice] 10720#17228: worker process 25392 exited with code 0
+2022/04/16 15:34:20 [info] 22356#23440: *67 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2022/04/16 15:34:23 [notice] 22832#27880: signal process started
+2022/04/16 15:34:23 [notice] 10720#17228: reconfiguring
+2022/04/16 15:34:23 [notice] 10720#17228: reconfiguring
+2022/04/16 15:34:23 [notice] 10720#17228: using the "select" event method
+2022/04/16 15:34:23 [notice] 10720#17228: using the "select" event method
+2022/04/16 15:34:23 [notice] 10720#17228: start worker processes
+2022/04/16 15:34:23 [notice] 10720#17228: start worker processes
+2022/04/16 15:34:23 [notice] 10720#17228: start worker process 9724
+2022/04/16 15:34:23 [notice] 10720#17228: start worker process 9724
+2022/04/16 15:34:24 [notice] 9724#22148: nginx/1.21.6
+2022/04/16 15:34:24 [notice] 9724#22148: nginx/1.21.6
+2022/04/16 15:34:24 [info] 9724#22148: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/16 15:34:24 [notice] 9724#22148: create thread 26572
+2022/04/16 15:34:24 [notice] 9724#22148: create thread 26572
+2022/04/16 15:34:24 [notice] 22356#2576: gracefully shutting down
+2022/04/16 15:34:24 [notice] 22356#2576: gracefully shutting down
+2022/04/16 15:34:24 [notice] 9724#22148: create thread 24364
+2022/04/16 15:34:24 [notice] 9724#22148: create thread 24364
+2022/04/16 15:34:24 [notice] 22356#13100: exiting
+2022/04/16 15:34:24 [notice] 9724#22148: create thread 1904
+2022/04/16 15:34:24 [notice] 22356#13100: exiting
+2022/04/16 15:34:24 [notice] 9724#22148: create thread 1904
+2022/04/16 15:34:24 [notice] 22356#23440: exiting
+2022/04/16 15:34:24 [notice] 22356#23440: exiting
+2022/04/16 15:34:24 [notice] 22356#2576: exit
+2022/04/16 15:34:24 [notice] 22356#2576: exit
+2022/04/16 15:34:24 [notice] 10720#17228: worker process 22356 exited with code 0
+2022/04/16 15:34:24 [notice] 10720#17228: worker process 22356 exited with code 0
+2022/04/16 15:35:32 [info] 9724#26572: *73 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2022/04/16 15:39:09 [notice] 1348#27844: signal process started
+2022/04/16 15:39:09 [notice] 10720#17228: reconfiguring
+2022/04/16 15:39:09 [notice] 10720#17228: reconfiguring
+2022/04/16 15:39:09 [notice] 10720#17228: using the "select" event method
+2022/04/16 15:39:09 [notice] 10720#17228: using the "select" event method
+2022/04/16 15:39:09 [notice] 10720#17228: start worker processes
+2022/04/16 15:39:09 [notice] 10720#17228: start worker processes
+2022/04/16 15:39:09 [notice] 10720#17228: start worker process 21996
+2022/04/16 15:39:09 [notice] 10720#17228: start worker process 21996
+2022/04/16 15:39:09 [notice] 21996#28324: nginx/1.21.6
+2022/04/16 15:39:09 [notice] 21996#28324: nginx/1.21.6
+2022/04/16 15:39:09 [info] 21996#28324: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/16 15:39:09 [notice] 21996#28324: create thread 6016
+2022/04/16 15:39:09 [notice] 21996#28324: create thread 6016
+2022/04/16 15:39:09 [notice] 9724#22148: gracefully shutting down
+2022/04/16 15:39:09 [notice] 21996#28324: create thread 28208
+2022/04/16 15:39:09 [notice] 9724#22148: gracefully shutting down
+2022/04/16 15:39:09 [notice] 21996#28324: create thread 28208
+2022/04/16 15:39:09 [notice] 9724#24364: exiting
+2022/04/16 15:39:09 [notice] 21996#28324: create thread 8980
+2022/04/16 15:39:09 [notice] 21996#28324: create thread 8980
+2022/04/16 15:39:09 [notice] 9724#24364: exiting
+2022/04/16 15:39:13 [notice] 9724#26572: exiting
+2022/04/16 15:39:13 [notice] 9724#26572: exiting
+2022/04/16 15:39:13 [notice] 9724#22148: exit
+2022/04/16 15:39:13 [notice] 9724#22148: exit
+2022/04/16 15:39:13 [notice] 10720#17228: worker process 9724 exited with code 0
+2022/04/16 15:39:13 [notice] 10720#17228: worker process 9724 exited with code 0
+2022/04/16 15:40:14 [info] 21996#6016: *99 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2022/04/16 15:40:40 [error] 21996#6016: *97 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:40:40 [error] 21996#6016: *97 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:40:40 [error] 21996#6016: *97 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:40:40 [warn] 21996#6016: *97 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:40:40 [warn] 21996#6016: *97 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:03 [error] 21996#6016: *97 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:03 [error] 21996#6016: *97 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:03 [error] 21996#6016: *97 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:03 [warn] 21996#6016: *97 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:03 [warn] 21996#6016: *97 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:40 [info] 21996#6016: *97 client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /media/default.jpg HTTP/1.1", upstream: "http://127.0.0.1:8000/media/default.jpg", host: "localhost", referrer: "http://localhost/"
+2022/04/16 15:41:42 [info] 21996#6016: *170 client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:44 [info] 21996#6016: *174 client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:47 [error] 21996#6016: *178 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:47 [error] 21996#6016: *178 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:47 [error] 21996#6016: *178 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:47 [warn] 21996#6016: *178 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:41:47 [warn] 21996#6016: *178 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2022/04/16 15:42:26 [emerg] 24560#13124: 1 worker_connections are not enough for 1 listening sockets
+2022/04/16 15:42:33 [notice] 23392#24896: signal process started
+2022/04/16 15:42:34 [notice] 10720#17228: reconfiguring
+2022/04/16 15:42:34 [notice] 10720#17228: reconfiguring
+2022/04/16 15:42:34 [notice] 10720#17228: using the "select" event method
+2022/04/16 15:42:34 [notice] 10720#17228: using the "select" event method
+2022/04/16 15:42:34 [notice] 10720#17228: start worker processes
+2022/04/16 15:42:34 [notice] 10720#17228: start worker processes
+2022/04/16 15:42:34 [notice] 10720#17228: start worker process 24924
+2022/04/16 15:42:34 [notice] 10720#17228: start worker process 24924
+2022/04/16 15:42:34 [notice] 24924#22076: nginx/1.21.6
+2022/04/16 15:42:34 [notice] 24924#22076: nginx/1.21.6
+2022/04/16 15:42:34 [info] 24924#22076: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/16 15:42:34 [notice] 24924#22076: create thread 21888
+2022/04/16 15:42:34 [notice] 24924#22076: create thread 21888
+2022/04/16 15:42:34 [notice] 21996#28324: gracefully shutting down
+2022/04/16 15:42:34 [notice] 21996#28324: gracefully shutting down
+2022/04/16 15:42:34 [notice] 24924#22076: create thread 4908
+2022/04/16 15:42:34 [notice] 24924#22076: create thread 4908
+2022/04/16 15:42:34 [notice] 21996#28208: exiting
+2022/04/16 15:42:34 [notice] 21996#28208: exiting
+2022/04/16 15:42:34 [notice] 24924#22076: create thread 10056
+2022/04/16 15:42:34 [notice] 24924#22076: create thread 10056
+2022/04/16 15:42:45 [info] 21996#6016: *181 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2022/04/16 15:42:45 [notice] 21996#6016: exiting
+2022/04/16 15:42:45 [notice] 21996#6016: exiting
+2022/04/16 15:42:45 [notice] 21996#28324: exit
+2022/04/16 15:42:45 [notice] 21996#28324: exit
+2022/04/16 15:42:45 [notice] 10720#17228: worker process 21996 exited with code 0
+2022/04/16 15:42:45 [notice] 10720#17228: worker process 21996 exited with code 0
+2022/04/16 15:42:52 [warn] 24924#21888: 3 worker_connections are not enough, reusing connections
+2022/04/16 15:42:52 [warn] 24924#21888: 3 worker_connections are not enough, reusing connections
+2022/04/16 15:45:39 [warn] 24924#21888: 3 worker_connections are not enough, reusing connections
+2022/04/16 15:45:39 [warn] 24924#21888: 3 worker_connections are not enough, reusing connections
+2022/04/16 15:49:59 [alert] 24924#21888: 3 worker_connections are not enough
+2022/04/16 15:49:59 [alert] 24924#21888: 3 worker_connections are not enough
+2022/04/16 15:49:59 [alert] 24924#21888: 3 worker_connections are not enough
+2022/04/16 15:50:00 [info] 24924#21888: *224 client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:9000/", host: "localhost"
+2022/04/17 13:10:24 [notice] 22480#9080: using the "select" event method
+2022/04/17 13:10:24 [notice] 22480#9080: using the "select" event method
+2022/04/17 13:10:24 [notice] 22480#9080: nginx/1.21.6
+2022/04/17 13:10:24 [notice] 22480#9080: nginx/1.21.6
+2022/04/17 13:10:24 [info] 22480#9080: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/17 13:10:24 [notice] 22480#9080: start worker processes
+2022/04/17 13:10:24 [notice] 22480#9080: start worker processes
+2022/04/17 13:10:24 [notice] 22480#9080: start worker process 25404
+2022/04/17 13:10:24 [notice] 22480#9080: start worker process 25404
+2022/04/17 13:10:24 [notice] 25404#15584: nginx/1.21.6
+2022/04/17 13:10:24 [notice] 25404#15584: nginx/1.21.6
+2022/04/17 13:10:24 [info] 25404#15584: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/17 13:10:24 [notice] 25404#15584: create thread 22212
+2022/04/17 13:10:24 [notice] 25404#15584: create thread 22212
+2022/04/17 13:10:24 [notice] 25404#15584: create thread 16668
+2022/04/17 13:10:24 [notice] 25404#15584: create thread 16668
+2022/04/17 13:10:24 [notice] 25404#15584: create thread 10700
+2022/04/17 13:10:24 [notice] 25404#15584: create thread 10700
+2022/04/17 13:10:47 [notice] 10928#13964: signal process started
+2022/04/17 13:10:47 [notice] 22480#9080: reconfiguring
+2022/04/17 13:10:47 [notice] 22480#9080: reconfiguring
+2022/04/17 13:10:47 [notice] 22480#9080: using the "select" event method
+2022/04/17 13:10:47 [notice] 22480#9080: using the "select" event method
+2022/04/17 13:10:47 [notice] 22480#9080: start worker processes
+2022/04/17 13:10:47 [notice] 22480#9080: start worker processes
+2022/04/17 13:10:47 [notice] 22480#9080: start worker process 4504
+2022/04/17 13:10:47 [notice] 22480#9080: start worker process 4504
+2022/04/17 13:10:47 [notice] 4504#11248: nginx/1.21.6
+2022/04/17 13:10:47 [notice] 4504#11248: nginx/1.21.6
+2022/04/17 13:10:47 [info] 4504#11248: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/17 13:10:47 [notice] 4504#11248: create thread 4448
+2022/04/17 13:10:47 [notice] 4504#11248: create thread 4448
+2022/04/17 13:10:47 [notice] 4504#11248: create thread 11024
+2022/04/17 13:10:47 [notice] 4504#11248: create thread 11024
+2022/04/17 13:10:47 [notice] 25404#15584: gracefully shutting down
+2022/04/17 13:10:47 [notice] 25404#15584: gracefully shutting down
+2022/04/17 13:10:47 [notice] 4504#11248: create thread 19560
+2022/04/17 13:10:47 [notice] 4504#11248: create thread 19560
+2022/04/17 13:10:47 [notice] 25404#16668: exiting
+2022/04/17 13:10:47 [notice] 25404#16668: exiting
+2022/04/17 13:10:47 [notice] 25404#22212: exiting
+2022/04/17 13:10:47 [notice] 25404#22212: exiting
+2022/04/17 13:10:47 [notice] 25404#15584: exit
+2022/04/17 13:10:47 [notice] 25404#15584: exit
+2022/04/17 13:10:47 [notice] 22480#9080: worker process 25404 exited with code 0
+2022/04/17 13:10:47 [notice] 22480#9080: worker process 25404 exited with code 0
+2022/04/17 13:11:39 [notice] 24208#24872: signal process started
+2022/04/17 13:11:39 [notice] 22480#9080: reconfiguring
+2022/04/17 13:11:39 [notice] 22480#9080: reconfiguring
+2022/04/17 13:11:39 [notice] 22480#9080: using the "select" event method
+2022/04/17 13:11:39 [notice] 22480#9080: using the "select" event method
+2022/04/17 13:11:39 [notice] 22480#9080: start worker processes
+2022/04/17 13:11:39 [notice] 22480#9080: start worker processes
+2022/04/17 13:11:39 [notice] 22480#9080: start worker process 420
+2022/04/17 13:11:39 [notice] 22480#9080: start worker process 420
+2022/04/17 13:11:39 [notice] 420#13552: nginx/1.21.6
+2022/04/17 13:11:39 [notice] 420#13552: nginx/1.21.6
+2022/04/17 13:11:39 [info] 420#13552: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/17 13:11:39 [notice] 420#13552: create thread 21484
+2022/04/17 13:11:39 [notice] 420#13552: create thread 21484
+2022/04/17 13:11:39 [notice] 420#13552: create thread 15556
+2022/04/17 13:11:39 [notice] 420#13552: create thread 15556
+2022/04/17 13:11:39 [notice] 420#13552: create thread 740
+2022/04/17 13:11:39 [notice] 420#13552: create thread 740
+2022/04/17 13:11:39 [notice] 4504#11248: gracefully shutting down
+2022/04/17 13:11:39 [notice] 4504#11248: gracefully shutting down
+2022/04/17 13:11:39 [notice] 4504#11024: exiting
+2022/04/17 13:11:39 [notice] 4504#11024: exiting
+2022/04/17 13:11:40 [notice] 4504#4448: exiting
+2022/04/17 13:11:40 [notice] 4504#4448: exiting
+2022/04/17 13:11:40 [notice] 4504#11248: exit
+2022/04/17 13:11:40 [notice] 4504#11248: exit
+2022/04/17 13:11:40 [notice] 22480#9080: worker process 4504 exited with code 0
+2022/04/17 13:11:40 [notice] 22480#9080: worker process 4504 exited with code 0
+2022/04/17 13:15:09 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:15:09 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:15:13 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:15:13 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:16:03 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:16:03 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:16:06 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:16:06 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:16:10 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:16:10 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:17:19 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:17:19 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:17:20 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:17:20 [warn] 420#21484: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:17:36 [notice] 25580#14080: signal process started
+2022/04/17 13:17:36 [notice] 22480#9080: exiting
+2022/04/17 13:17:36 [notice] 22480#9080: exiting
+2022/04/17 13:17:36 [notice] 420#13552: gracefully shutting down
+2022/04/17 13:17:36 [notice] 420#13552: gracefully shutting down
+2022/04/17 13:17:36 [notice] 420#15556: exiting
+2022/04/17 13:17:36 [notice] 420#15556: exiting
+2022/04/17 13:17:36 [notice] 420#21484: exiting
+2022/04/17 13:17:36 [notice] 420#21484: exiting
+2022/04/17 13:17:36 [notice] 420#13552: exit
+2022/04/17 13:17:36 [notice] 420#13552: exit
+2022/04/17 13:17:36 [notice] 22480#9080: worker process 420 exited with code 0
+2022/04/17 13:17:36 [notice] 22480#9080: worker process 420 exited with code 0
+2022/04/17 13:17:36 [notice] 22480#9080: exit
+2022/04/17 13:17:36 [notice] 22480#9080: exit
+2022/04/17 13:34:05 [notice] 12856#22560: using the "select" event method
+2022/04/17 13:34:05 [notice] 12856#22560: using the "select" event method
+2022/04/17 13:34:05 [notice] 12856#22560: nginx/1.21.6
+2022/04/17 13:34:05 [notice] 12856#22560: nginx/1.21.6
+2022/04/17 13:34:05 [info] 12856#22560: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/17 13:34:05 [notice] 12856#22560: start worker processes
+2022/04/17 13:34:05 [notice] 12856#22560: start worker processes
+2022/04/17 13:34:05 [notice] 12856#22560: start worker process 9884
+2022/04/17 13:34:05 [notice] 12856#22560: start worker process 9884
+2022/04/17 13:34:05 [notice] 9884#14288: nginx/1.21.6
+2022/04/17 13:34:05 [notice] 9884#14288: nginx/1.21.6
+2022/04/17 13:34:05 [info] 9884#14288: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 22072
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 22072
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 1884
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 1884
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 2832
+2022/04/17 13:34:05 [notice] 9884#14288: create thread 2832
+2022/04/17 13:34:29 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:34:29 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:34:38 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:34:38 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:37:18 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:37:18 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:38:05 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 13:38:05 [warn] 9884#22072: 3 worker_connections are not enough, reusing connections
+2022/04/17 16:15:29 [emerg] 12032#26248: CreateDirectory() "C:\pythonDSAI\marie\sad-project\SAD\nginx-1.21.6/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2022/04/17 16:16:07 [emerg] 4464#25852: CreateDirectory() "C:\pythonDSAI\marie\sad-project\SAD\nginx-1.21.6/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2022/04/17 16:17:09 [emerg] 13836#21288: CreateDirectory() "C:\pythonDSAI\marie\sad-project\SAD\nginx-1.21.6/temp/client_body_temp" failed (3: The system cannot find the path specified)
