@@ -19,11 +19,11 @@ def searchpage(request):
     if 'country' and 'city' in request.GET:
         if request.GET.get('city') is not '':
             context = {
-                'listings': Listing.objects.filter(country=request.GET.get('country')).filter(city=request.GET.get('city')).filter(price__gte=request.GET.get('price'))
+                'listings': Listing.objects.filter(country__icontains=request.GET.get('country')).filter(city__icontains=request.GET.get('city')).filter(price__lte=request.GET.get('price'))
             }
         else:
             context = {
-                'listings': Listing.objects.filter(country=request.GET.get('country')).filter(price__gte=request.GET.get('price'))
+                'listings': Listing.objects.filter(country__icontains=request.GET.get('country')).filter(price__lte=request.GET.get('price'))
             }
     return render(request, 'booking/search.html', context)
 
