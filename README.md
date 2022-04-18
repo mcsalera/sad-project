@@ -6,7 +6,7 @@
 - **Marie Curie Salera** - Setting up of repository 100%, Logging 90%
 
 # How to Run
-1. Enter `SAD\crud` and run `docker-compose up --build -d`.
+1. Enter `SAD/crud` and run `docker-compose up --build -d`.
 2. Run `docker-compose run web python3 manage.py migrate`.
 3. Enter `nginx-1.21.6` and run command `nginx`.
 4. Navigate to `http://localhost/` on browser.
