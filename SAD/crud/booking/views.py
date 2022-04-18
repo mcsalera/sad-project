@@ -17,7 +17,7 @@ def searchpage(request):
         'listings': Listing.objects.all()
     }
     if 'country' and 'city' in request.GET:
-        if request.GET.get('city') is not '':
+        if request.GET.get('city') != '':
             context = {
                 'listings': Listing.objects.filter(country__icontains=request.GET.get('country')).filter(city__icontains=request.GET.get('city')).filter(price__lte=request.GET.get('price'))
             }
