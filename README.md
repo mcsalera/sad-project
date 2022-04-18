@@ -10,3 +10,10 @@
 2. Run `docker-compose run web python3 manage.py migrate`.
 3. Enter `nginx-1.21.6` and run command `nginx`.
 4. Navigate to `http://localhost/` on browser.
+
+## ELK Setup
+1. Run the command ```curl -XPOST -D- "http://localhost:5601/api/saved_objects/index-pattern" \
+    -H "Content-Type: application/json" \
+    -H "kbn-version: 6.1.0" \
+    -d "{'attributes':{'title':'logstash-*','timeFieldName':'@timestamp'}}"```
+2. Navigate to `http://localhost:5601/`
