@@ -12,38 +12,46 @@ services:
     ports:
       - "8001:5432"
   elasticsearch:
-      image: elasticsearch:5.4
-      container_name: elasticsearch
-      volumes:
-          - type: volume
-            source: elasticsearchdata
-            target: /usr/share/elasticsearch/data/
-      ports:
-            - "9200:9200"
-  kibana:
-    labels:
-        com.example.service: "kibana"
-        com.example.description: "Data visualisation and for log aggregation"
-    image: kibana:5.4.3
-    container_name: kibana
-    ports:
-         - "5601:5601"
-    environment:
-     - ELASTICSEARCH_URL=http://es:9200
-    depends_on:
-     - elasticsearch
-  logstash:
-    labels:
-      com.example.service: "logstash"
-      com.example.description: "For logging data"
-    image: logstash:5.4.3
+    build:
+      context: elasticsearch/
     volumes:
-      - ./:/logstash_dir
-    command: logstash -f /logstash_dir/logstash.conf
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - elk
+
+  logstash:
+    build:
+      context: logstash/
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+    ports:
+      - "5000:5000"
+      - "12201:12201/udp"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - elk
     depends_on:
       - elasticsearch
+
+  kibana:
+    build:
+      context: kibana/
+    volumes:
+      - ./kibana/config/:/usr/share/kibana/config:ro
     ports:
-      - "5959:5959"
+      - "5601:5601"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
@@ -60,7 +68,11 @@ services:
       - elasticsearch
       - kibana
 
-      
 volumes:
     postgresql-backend:
     elasticsearchdata:
+
+networks:
+
+  elk:
+    driver: bridge

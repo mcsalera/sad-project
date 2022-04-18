@@ -4,3 +4,4 @@ django-crispy-forms==1.14.0
 Pillow==9.1.0
 sqlparse==0.4.2
 psycopg2>=2.8
+python-logstash==0.4.8

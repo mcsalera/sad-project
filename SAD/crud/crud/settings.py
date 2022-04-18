@@ -86,11 +86,10 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
-            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
-            'style': '{',
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
         },
         'simple': {
-            'format': 'velname)s %(message)s'
+            'format': '%(levelname)s %(message)s'
         },
     },
     'handlers': {
@@ -103,26 +102,26 @@ LOGGING = {
             'level': 'WARNING',
             'class': 'logstash.TCPLogstashHandler',
             'host': 'localhost',
-            'port': 5959, # Default value: 5959
-            'version': 1, # Version of logstash event schema. Default value: 0 (for backward compatibility of the library)
-            'message_type': 'django',  # 'type' field in logstash message. Default value: 'logstash'.
-            'fqdn': False, # Fully qualified domain name. Default value: false.
-            'tags': ['django.request'], # list of tags. Default: None.
+            'port': 5000,  # Default value: 5000
+            'version': 1,
+            'message_type': 'django_logstash',  # 'type' field in logstash message. Default value: 'logstash'.
+            'fqdn': False,  # Fully qualified domain name. Default value:false.
+            'tags': ['django.request'],  # list of tags. Default: None.
         },
     },
     'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'INFO',
+            'propagate': True,
+        },
         'django.request': {
             'handlers': ['logstash'],
             'level': 'WARNING',
             'propagate': True,
         },
-        'django': {
-            'handlers': ['console'],
-            'propagate': True,
-        },
     }
 }
-
 
 WSGI_APPLICATION = 'crud.wsgi.application'
 
