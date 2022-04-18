@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_elasticsearch_dsl',
 ]
+
 ELASTICSEARCH_DSL={
     'default': {
         'hosts': 'localhost:9200'
@@ -87,7 +88,10 @@ LOGGING = {
         'verbose': {
             'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
             'style': '{',
-        }
+        },
+        'simple': {
+            'format': 'velname)s %(message)s'
+        },
     },
     'handlers': {
         'console': {
