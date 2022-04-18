@@ -1,6 +1,6 @@
 # sad-project
 # Members
-- **Devyani Dubey** -
+- **Devyani Dubey** - docker-compose.yml for elk-stack 80%, backend for logging 30%
 - **Anuj Gupta** - Django back-end development 80%, initial basic front-end design 100%, load balancing 100%
 - **Abhinav Lugun** - Improved front-end design 100%, setup Dockfile and docker-compose.yml 100%, Django back-end development: 15%,  
 - **Marie Curie Salera** - Setting up of repository 100%, Logging 90%
