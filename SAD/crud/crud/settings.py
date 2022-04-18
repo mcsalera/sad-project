@@ -99,14 +99,14 @@ LOGGING = {
             'formatter': 'simple'
         },
         'logstash': {
-            'level': 'WARNING',
+            'level': 'INFO',
             'class': 'logstash.TCPLogstashHandler',
-            'host': 'localhost',
+            'host': '0.0.0.0',
             'port': 5000,  # Default value: 5000
             'version': 1,
             'message_type': 'django_logstash',  # 'type' field in logstash message. Default value: 'logstash'.
             'fqdn': False,  # Fully qualified domain name. Default value:false.
-            'tags': ['django.request'],  # list of tags. Default: None.
+            'tags': [],  # list of tags. Default: None.
         },
     },
     'loggers': {
@@ -115,9 +115,9 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
-        'django.request': {
+        '': {
             'handlers': ['logstash'],
-            'level': 'WARNING',
+            'level': 'INFO',
             'propagate': True,
         },
     }

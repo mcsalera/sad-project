@@ -44,12 +44,17 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-header">
-                      <b>Price:</b> {{ object.price }} ฿ / hour
+                        <b>Price:</b> {{ object.price }} ฿ / hour
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">Lorem Ipsum</h5>
-                      <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                      <a href="#" class="btn btn-info mt-3">Book!!!!</a>
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        {% if object.owner == user %}
+                            <a href="#" class="btn btn-info mt-3 disabled">Book!!!!</a>
+                            <p><b>Note:</b> your hosted facility</p>
+                        {% else %}
+                            <a href="#" class="btn btn-info mt-3">Book!!!!</a>
+                        {% endif %}
                     </div>
                   </div>
                   <div class="mt-3">

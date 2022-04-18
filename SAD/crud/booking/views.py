@@ -8,6 +8,7 @@ from django.views.generic import (
     CreateView,
     UpdateView,
     DeleteView)
+from django.http import Http404
 
 from .forms import SearchForm
 
@@ -17,7 +18,7 @@ def searchpage(request):
         'listings': Listing.objects.all()
     }
     if 'country' and 'city' in request.GET:
-        if request.GET.get('city') is not '':
+        if request.GET.get('city') != '':
             context = {
                 'listings': Listing.objects.filter(country__icontains=request.GET.get('country')).filter(city__icontains=request.GET.get('city')).filter(price__lte=request.GET.get('price'))
             }
@@ -81,5 +82,7 @@ class ListingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 
 def about(request):
+    raise Exception('error !!!!')
+    raise Http404("sorry 404")
     return render(request, 'booking/about.html', {'title': 'About'})
 # Create your views here.

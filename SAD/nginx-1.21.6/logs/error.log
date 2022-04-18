@@ -1,68 +1,80 @@
-2022/04/17 16:18:55 [notice] 10060#21036: signal process started
-2022/04/17 16:19:27 [notice] 28532#28536: using the "select" event method
-2022/04/17 16:19:27 [notice] 28532#28536: using the "select" event method
-2022/04/17 16:19:27 [notice] 28532#28536: nginx/1.21.6
-2022/04/17 16:19:27 [notice] 28532#28536: nginx/1.21.6
-2022/04/17 16:19:27 [info] 28532#28536: OS: 260200 build:9200, "", suite:100, type:1
-2022/04/17 16:19:27 [notice] 28532#28536: start worker processes
-2022/04/17 16:19:27 [notice] 28532#28536: start worker processes
-2022/04/17 16:19:27 [notice] 28532#28536: start worker process 28552
-2022/04/17 16:19:27 [notice] 28532#28536: start worker process 28552
-2022/04/17 16:19:27 [notice] 28552#28556: nginx/1.21.6
-2022/04/17 16:19:27 [notice] 28552#28556: nginx/1.21.6
-2022/04/17 16:19:27 [info] 28552#28556: OS: 260200 build:9200, "", suite:100, type:1
-2022/04/17 16:19:27 [notice] 28552#28556: create thread 28632
-2022/04/17 16:19:27 [notice] 28552#28556: create thread 28632
-2022/04/17 16:19:27 [notice] 28552#28556: create thread 28628
-2022/04/17 16:19:27 [notice] 28552#28556: create thread 28628
-2022/04/17 16:19:27 [notice] 28552#28556: create thread 28644
-2022/04/17 16:19:27 [notice] 28552#28556: create thread 28644
-2022/04/17 16:19:35 [notice] 27684#27736: signal process started
-2022/04/17 16:19:35 [notice] 28532#28536: reconfiguring
-2022/04/17 16:19:35 [notice] 28532#28536: reconfiguring
-2022/04/17 16:19:35 [notice] 28532#28536: using the "select" event method
-2022/04/17 16:19:35 [notice] 28532#28536: using the "select" event method
-2022/04/17 16:19:35 [notice] 28532#28536: start worker processes
-2022/04/17 16:19:35 [notice] 28532#28536: start worker processes
-2022/04/17 16:19:35 [notice] 28532#28536: start worker process 27764
-2022/04/17 16:19:35 [notice] 28532#28536: start worker process 27764
-2022/04/17 16:19:35 [notice] 27764#27748: nginx/1.21.6
-2022/04/17 16:19:35 [notice] 27764#27748: nginx/1.21.6
-2022/04/17 16:19:35 [info] 27764#27748: OS: 260200 build:9200, "", suite:100, type:1
-2022/04/17 16:19:35 [notice] 27764#27748: create thread 27824
-2022/04/17 16:19:35 [notice] 27764#27748: create thread 27824
-2022/04/17 16:19:35 [notice] 27764#27748: create thread 27704
-2022/04/17 16:19:35 [notice] 27764#27748: create thread 27704
-2022/04/17 16:19:35 [notice] 28552#28556: gracefully shutting down
-2022/04/17 16:19:35 [notice] 28552#28556: gracefully shutting down
-2022/04/17 16:19:35 [notice] 27764#27748: create thread 27700
-2022/04/17 16:19:35 [notice] 27764#27748: create thread 27700
-2022/04/17 16:19:35 [notice] 28552#28628: exiting
-2022/04/17 16:19:35 [notice] 28552#28628: exiting
-2022/04/17 16:19:35 [notice] 28552#28632: exiting
-2022/04/17 16:19:35 [notice] 28552#28632: exiting
-2022/04/17 16:19:35 [notice] 28552#28556: exit
-2022/04/17 16:19:35 [notice] 28552#28556: exit
-2022/04/17 16:19:35 [notice] 28532#28536: worker process 28552 exited with code 0
-2022/04/17 16:19:35 [notice] 28532#28536: worker process 28552 exited with code 0
-2022/04/17 16:20:24 [warn] 27764#27824: *1 an upstream response is buffered to a temporary file C:\pythonDSAI\marie\sad-project\SAD\nginx-1.21.6/temp/proxy_temp/1/00/0000000001 while reading upstream, client: 127.0.0.1, server: localhost, request: "GET /static/booking/images/the-anam-_twiIcIsp2s-unsplash.jpg HTTP/1.1", upstream: "http://127.0.0.1:8000/static/booking/images/the-anam-_twiIcIsp2s-unsplash.jpg", host: "localhost", referrer: "http://localhost/"
-2022/04/17 16:20:24 [warn] 27764#27824: *1 an upstream response is buffered to a temporary file C:\pythonDSAI\marie\sad-project\SAD\nginx-1.21.6/temp/proxy_temp/1/00/0000000001 while reading upstream, client: 127.0.0.1, server: localhost, request: "GET /static/booking/images/the-anam-_twiIcIsp2s-unsplash.jpg HTTP/1.1", upstream: "http://127.0.0.1:8000/static/booking/images/the-anam-_twiIcIsp2s-unsplash.jpg", host: "localhost", referrer: "http://localhost/"
-2022/04/17 16:20:24 [warn] 27764#27824: 3 worker_connections are not enough, reusing connections
-2022/04/17 16:20:24 [warn] 27764#27824: 3 worker_connections are not enough, reusing connections
-2022/04/17 16:20:27 [warn] 27764#27824: 3 worker_connections are not enough, reusing connections
-2022/04/17 16:20:27 [warn] 27764#27824: 3 worker_connections are not enough, reusing connections
-2022/04/17 16:20:57 [notice] 5544#9440: signal process started
-2022/04/17 16:20:57 [notice] 28532#28536: exiting
-2022/04/17 16:20:57 [notice] 28532#28536: exiting
-2022/04/17 16:20:57 [notice] 27764#27748: gracefully shutting down
-2022/04/17 16:20:57 [notice] 27764#27748: gracefully shutting down
-2022/04/17 16:20:57 [notice] 27764#27704: exiting
-2022/04/17 16:20:57 [notice] 27764#27704: exiting
-2022/04/17 16:20:57 [notice] 27764#27824: exiting
-2022/04/17 16:20:57 [notice] 27764#27824: exiting
-2022/04/17 16:20:57 [notice] 27764#27748: exit
-2022/04/17 16:20:57 [notice] 27764#27748: exit
-2022/04/17 16:20:57 [notice] 28532#28536: worker process 27764 exited with code 0
-2022/04/17 16:20:57 [notice] 28532#28536: worker process 27764 exited with code 0
-2022/04/17 16:20:57 [notice] 28532#28536: exit
-2022/04/17 16:20:57 [notice] 28532#28536: exit
+2022/04/18 20:20:37 [notice] 34240#32080: signal process started
+2022/04/18 20:20:37 [notice] 39632#29672: using the "select" event method
+2022/04/18 20:20:37 [notice] 39632#29672: using the "select" event method
+2022/04/18 20:20:37 [notice] 39632#29672: start worker processes
+2022/04/18 20:20:37 [notice] 39632#29672: start worker processes
+2022/04/18 20:20:37 [notice] 39632#29672: start worker process 31840
+2022/04/18 20:20:37 [notice] 39632#29672: start worker process 31840
+2022/04/18 20:20:37 [notice] 31840#8092: nginx/1.21.6
+2022/04/18 20:20:37 [notice] 31840#8092: nginx/1.21.6
+2022/04/18 20:20:37 [info] 31840#8092: OS: 260200 build:9200, "", suite:100, type:1
+2022/04/18 20:20:37 [notice] 31840#8092: create thread 39892
+2022/04/18 20:20:37 [notice] 31840#8092: create thread 39892
+2022/04/18 20:20:37 [notice] 31840#8092: create thread 37192
+2022/04/18 20:20:37 [notice] 31840#8092: create thread 37192
+2022/04/18 20:20:37 [notice] 31840#8092: create thread 27384
+2022/04/18 20:20:37 [notice] 31840#8092: create thread 27384
+2022/04/18 20:20:37 [notice] 39632#29672: worker process 15384 exited with code 0
+2022/04/18 20:20:37 [notice] 39632#29672: worker process 15384 exited with code 0
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:20:48 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:20:48 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:40 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:44 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:44 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:44 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:44 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:44 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:21:44 [alert] 31840#39892: 3 worker_connections are not enough
+2022/04/18 20:23:33 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:23:33 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:23:35 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:23:35 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:24:26 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:24:26 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:24:38 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:24:38 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:30:34 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:30:34 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:30:36 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 20:30:36 [warn] 31840#39892: 3 worker_connections are not enough, reusing connections
+2022/04/18 22:06:51 [notice] 14456#34704: signal process started
+2022/04/18 22:06:51 [notice] 39632#29672: exiting
+2022/04/18 22:06:51 [notice] 39632#29672: exiting
+2022/04/18 22:06:51 [notice] 31840#8092: gracefully shutting down
+2022/04/18 22:06:51 [notice] 31840#8092: gracefully shutting down
+2022/04/18 22:06:51 [notice] 31840#37192: exiting
+2022/04/18 22:06:51 [notice] 31840#37192: exiting
+2022/04/18 22:06:52 [notice] 31840#39892: exiting
+2022/04/18 22:06:52 [notice] 31840#39892: exiting
+2022/04/18 22:06:52 [notice] 31840#8092: exit
+2022/04/18 22:06:52 [notice] 31840#8092: exit
+2022/04/18 22:06:52 [notice] 39632#29672: worker process 31840 exited with code 0
+2022/04/18 22:06:52 [notice] 39632#29672: worker process 31840 exited with code 0
+2022/04/18 22:06:52 [notice] 39632#29672: exit
+2022/04/18 22:06:52 [notice] 39632#29672: exit

@@ -52,7 +52,7 @@ services:
     depends_on:
       - elasticsearch
 
-  web:
+  web1:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
@@ -67,6 +67,53 @@ services:
       - db
       - elasticsearch
       - kibana
+    logging:
+        driver: syslog 
+        options:
+            syslog-address: tcp://0.0.0.0:5000
+            tag: web-container-tcp
+
+  web2:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8888
+    volumes:
+      - .:/app
+    ports:
+      - "8888:8888"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    depends_on:
+      - db
+      - elasticsearch
+      - kibana
+    logging:
+        driver: syslog 
+        options:
+            syslog-address: tcp://0.0.0.0:5000
+            tag: web-container-tcp
+
+  web3:
+    build: .
+    command: python manage.py runserver 0.0.0.0:9000
+    volumes:
+      - .:/app
+    ports:
+      - "9000:9000"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    depends_on:
+      - db
+      - elasticsearch
+      - kibana
+    logging:
+        driver: syslog 
+        options:
+            syslog-address: tcp://0.0.0.0:5000
+            tag: web-container-tcp
 
 volumes:
     postgresql-backend:
