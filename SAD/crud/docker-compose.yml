@@ -9,13 +9,39 @@ services:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-  web:
+  web1:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/app
     ports:
       - "8000:8000"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    depends_on:
+      - db
+  web2:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8888
+    volumes:
+      - .:/app
+    ports:
+      - "8888:8888"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    depends_on:
+      - db
+  web3:
+    build: .
+    command: python manage.py runserver 0.0.0.0:9000
+    volumes:
+      - .:/app
+    ports:
+      - "9000:9000"
     environment:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
