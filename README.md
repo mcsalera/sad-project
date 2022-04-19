@@ -17,3 +17,7 @@
     -H "kbn-version: 6.1.0" \
     -d "{'attributes':{'title':'logstash-*','timeFieldName':'@timestamp'}}"```
 2. Navigate to `http://localhost:5601/`
+
+##Documents
+1. Project Presentation - https://docs.google.com/presentation/d/1dXpTHFqFMV7D8KSz6An6Mgf38JzkD2OGU53JLG2fM4E/edit?usp=sharing
+2. Final Project Report - https://docs.google.com/document/d/1cm9ItTzX0pdK51E61_Yoq8z9nMHr10r_mBtLMhjahTQ/edit?usp=sharing
