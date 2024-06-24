@@ -1,4 +1,4 @@
-version: "3"
+version: "3.2"
    
 services:
   db:
@@ -9,6 +9,49 @@ services:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    ports:
+      - "8001:5432"
+  elasticsearch:
+    build:
+      context: elasticsearch/
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - elk
+
+  logstash:
+    build:
+      context: logstash/
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+    ports:
+      - "5000:5000"
+      - "12201:12201/udp"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    build:
+      context: kibana/
+    volumes:
+      - ./kibana/config/:/usr/share/kibana/config:ro
+    ports:
+      - "5601:5601"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
   web1:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
@@ -22,6 +65,14 @@ services:
       - POSTGRES_PASSWORD=postgres
     depends_on:
       - db
+      - elasticsearch
+      - kibana
+    logging:
+        driver: syslog 
+        options:
+            syslog-address: tcp://0.0.0.0:5000
+            tag: web-container-tcp
+
   web2:
     build: .
     command: python manage.py runserver 0.0.0.0:8888
@@ -35,6 +86,14 @@ services:
       - POSTGRES_PASSWORD=postgres
     depends_on:
       - db
+      - elasticsearch
+      - kibana
+    logging:
+        driver: syslog 
+        options:
+            syslog-address: tcp://0.0.0.0:5000
+            tag: web-container-tcp
+
   web3:
     build: .
     command: python manage.py runserver 0.0.0.0:9000
@@ -48,5 +107,19 @@ services:
       - POSTGRES_PASSWORD=postgres
     depends_on:
       - db
+      - elasticsearch
+      - kibana
+    logging:
+        driver: syslog 
+        options:
+            syslog-address: tcp://0.0.0.0:5000
+            tag: web-container-tcp
+
 volumes:
     postgresql-backend:
+    elasticsearchdata:
+
+networks:
+
+  elk:
+    driver: bridge

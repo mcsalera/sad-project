@@ -8,6 +8,7 @@ from django.views.generic import (
     CreateView,
     UpdateView,
     DeleteView)
+from django.http import Http404
 
 from .forms import SearchForm
 
@@ -81,5 +82,7 @@ class ListingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 
 def about(request):
+    raise Exception('error !!!!')
+    raise Http404("sorry 404")
     return render(request, 'booking/about.html', {'title': 'About'})
 # Create your views here.
